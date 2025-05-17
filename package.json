@@ -1,7 +1,10 @@
 {
-  "name": "site",
-  "version": "0.1.0",
+  "name": "lastactivity-viewer",
+  "version": "1.0.0",
   "private": true,
+  "description": "Windows sisteminizdeki son aktiviteleri güvenli bir şekilde görüntüleyin",
+  "author": "SecureTools",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

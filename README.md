@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LastActivity Viewer
 
-## Getting Started
+LastActivity Viewer, Windows sisteminizdeki son kullanıcı aktivitelerini güvenli bir şekilde görüntülemenizi sağlayan profesyonel bir araçtır.
 
-First, run the development server:
+## Özellikler
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 🔒 Güvenli ve Sertifikalı
+- ⚡ Yüksek Performans
+- 🎯 Kolay Kullanım
+- 🌐 Türkçe Arayüz
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Başlarken
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. LastActivityView.exe dosyasını indirin
+2. İndirilen dosyayı çalıştırın
+3. Kurulum gerektirmez, hemen kullanmaya başlayabilirsiniz
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Sistem Gereksinimleri
 
-## Learn More
+- Windows 7, 8, 10 veya 11
+- 64-bit işletim sistemi
+- Minimum 2GB RAM
+- 50MB boş disk alanı
 
-To learn more about Next.js, take a look at the following resources:
+## Güvenlik
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Tüm dosyalar virüs taramasından geçirilmiştir
+- Dijital olarak imzalanmıştır
+- Güvenlik sertifikasına sahiptir
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## İletişim
 
-## Deploy on Vercel
+Sorularınız ve önerileriniz için:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 📧 Email: contact@securetools.dev
+- 🌐 Website: https://secure-tools.vercel.app
+- 💬 Discord: https://discord.gg/securetools
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Lisans
+
+Bu yazılım MIT lisansı altında dağıtılmaktadır. Daha fazla bilgi için `LICENSE` dosyasını inceleyebilirsiniz.
