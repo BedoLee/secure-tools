@@ -8,6 +8,9 @@ export default function Home() {
     window.location.href = 'https://github.com/BedoLee/secure-tools/releases/latest/download/LastActivityView.zip';
   };
 
+  // Versiyon bilgisi
+  const version = "1.0.1";
+
   return (
     <>
       <Head>
@@ -57,7 +60,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                   </svg>
                   ZIP Olarak İndir
-                  <span className="ml-2 text-sm opacity-90">v1.0.0 (ZIP)</span>
+                  <span className="ml-2 text-sm opacity-90">v{version} (ZIP)</span>
                 </button>
                 <a
                   href="#features"
