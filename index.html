@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>LastActivity - Profesyonel İndirme Sitesi</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+    background: rgba(255 255 255 / 0.15);
+    backdrop-filter: blur(8px);
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #fff;
+    letter-spacing: 1.1px;
+    user-select: none;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.8rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffd700;
+  }
+  main {
+    width: 100%;
+    max-width: 1100px;
+    padding: 3rem 1.5rem 6rem;
+    text-align: center;
+  }
+  main h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+  main p.lead {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+  .btn-download {
+    background: #ffd700;
+    color: #222;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(255, 215, 0, 0.4);
+    transition: all 0.3s ease;
+    user-select: none;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-download:hover {
+    background: #ffc300;
+    box-shadow: 0 12px 25px rgba(255, 195, 0, 0.6);
+    transform: translateY(-4px);
+  }
+
+  /* Features Section */
+  section.features {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 2.5rem;
+    text-align: left;
+    color: #fff;
+  }
+  section.features article {
+    background: rgba(255 255 255 / 0.15);
+    padding: 1.8rem 1.6rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: background 0.3s ease;
+  }
+  section.features article:hover {
+    background: rgba(255 255 255 / 0.3);
+  }
+  section.features article svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    fill: #ffd700;
+  }
+  section.features h3 {
+    margin-bottom: 0.6rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  section.features p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  /* Download Section */
+  section.downloads {
+    margin-top: 5rem;
+    text-align: center;
+    color: #fff;
+  }
+  section.downloads h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .download-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .download-card {
+    background: rgba(255 255 255 / 0.15);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 220px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: background 0.3s ease;
+    cursor: default;
+  }
+  .download-card:hover {
+    background: rgba(255 255 255 / 0.3);
+  }
+  .download-card h3 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  .download-card p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+  .download-card a {
+    background: #ffd700;
+    color: #222;
+    font-weight: 700;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+  }
+  .download-card a:hover {
+    background: #ffc300;
+  }
+
+  /* Footer */
+  footer {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    background: rgba(0,0,0,0.15);
+    text-align: center;
+    color: #eee;
+    font-size: 0.9rem;
+    user-select: none;
+    margin-top: auto;
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    main h2 {
+      font-size: 2.2rem;
+    }
+    section.downloads .download-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>LastActivity</h1>
+    <nav>
+      <a href="#features">Özellikler</a>
+      <a href="#downloads">İndir</a>
+      <a href="#contact">İletişim</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>LastActivity - En İyi Aktivite Takip Uygulaması</h2>
+    <p class="lead">LastActivity ile tüm hareketlerinizi kolayca takip edin, raporlayın ve analiz edin. Hızlı, güvenilir ve kullanıcı dostu arayüzle yanınızda.</p>
+    <a href="#downloads" class="btn-download">Hemen İndir</a>
+
+    <section class="features" id="features" aria-label="Uygulama Özellikleri">
+      <article>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 2h-2v10h2V2zM5 22h14v-2H5v2zM10 8h4v2h-4z"/></svg>
+        <h3>Gerçek Zamanlı Takip</h3>
+        <p>Kullanıcı aktivitelerinizi anlık olarak takip edin ve analiz edin.</p>
+      </article>
+      <article>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4S14.21 4 12 4 8 5.79 8 8s1.79 4 4 4z"/><path d="M12 14c-4.41 0-8 1.79-8 4v2h16v-2c0-2.21-3.59-4-8-4z"/></svg>
+        <h3>Kullanıcı Dostu Arayüz</h3>
+        <p>Her seviyeden kullanıcı için sade ve anlaşılır tasarım.</p>
+      </article>
+      <article>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5H7z"/></svg>
+        <h3>Hızlı ve Güvenli</h3>
+        <p>Uygulamanız hızlı çalışır, verileriniz güvenle saklanır.</p>
+      </article>
+    </section>
+
+    <section class="downloads" id="downloads" aria-label="İndirilebilir Dosyalar">
+      <h2>Platformlara Özel İndirme</h2>
+      <div class="download-cards">
+        <div class="download-card">
+          <h3>Windows</h3>
+          <p>Versiyon: 1.2.0<br />Boyut: 25 MB</p>
+          <a href="https://example.com/download/lastactivity-windows.exe" target="_blank" rel="noopener noreferrer">İndir</a>
+        </div>
+        <div class="download-card">
+          <h3>MacOS</h3>
+          <p>Versiyon: 1.2.0<br />Boyut: 27 MB</p>
+          <a href="https://example.com/download/lastactivity-macos.dmg" target="_blank" rel="noopener noreferrer">İndir</a>
+        </div>
+        <div class="download-card">
+          <h3>Android</h3>
+          <p>Versiyon: 1.1.5<br />Boyut: 12 MB</p>
+          <a href="https://example.com/download/lastactivity-android.apk" target="_blank" rel="noopener noreferrer">İndir</a>
+        </div>
+        <div class="download-card">
+          <h3>iOS</h3>
+          <p>Versiyon: 1.1.5<br />Boyut: 15 MB</p>
+          <a href="https://example.com/download/lastactivity-ios.ipa" target="_blank" rel="noopener noreferrer">İndir</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top: 5rem; color: white; max-width: 600px; margin-left:auto; margin-right:auto; text-align: center;">
+      <h2>İletişim</h2>
+      <p>Her türlü soru ve destek için bize ulaşın:</p>
+      <form action="mailto:support@example.com" method="post" enctype="text/plain" style="margin-top: 1.5rem;">
+        <input type="text" name="name" placeholder="Adınız" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: none; margin-bottom: 1rem; font-size: 1rem;">
+        <input type="email" name="email" placeholder="E-posta" required style="width: 100%; padding: 0.8rem; border-radius: 8px; border: none; margin-bottom: 1rem; font-size: 1rem;">
+        <textarea name="message" placeholder="Mesajınız" required rows="5" style="width: 100%; padding: 0.8rem; border-radius: 8px; border: none; font-size: 1rem;"></textarea>
+        <button type="submit" style="background:#ffd700; color:#222; font-weight: 700; padding: 1rem 2.5rem; border:none; border-radius:50px; cursor:pointer; margin-top:1rem; font-size: 1.1rem;">Gönder</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 LastActivity | Tüm hakları saklıdır.
+  </footer>
+</body>
+</html>
