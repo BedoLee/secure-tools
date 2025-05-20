@@ -4,8 +4,8 @@ import Head from "next/head";
 
 export default function Home() {
   const handleDownload = () => {
-    // Direkt indirme başlat
-    window.location.href = '/LastActivityView.exe';
+    // GitHub Release URL'sine yönlendir
+    window.location.href = 'https://github.com/BedoLee/secure-tools/releases/download/v1.0.0/LastActivityView.zip';
   };
 
   return (
@@ -56,8 +56,8 @@ export default function Home() {
                   <svg className="mr-2 -ml-1 h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                   </svg>
-                  Güvenli İndirme
-                  <span className="ml-2 text-sm opacity-90">v1.0.0</span>
+                  ZIP Olarak İndir
+                  <span className="ml-2 text-sm opacity-90">v1.0.0 (ZIP)</span>
                 </button>
                 <a
                   href="#features"
