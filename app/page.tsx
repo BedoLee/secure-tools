@@ -323,13 +323,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Process Hacker 2 */}
               <div className="relative bg-gray-900 dark:bg-gray-900 border border-white/10 shadow-2xl rounded-3xl p-8 flex flex-col h-full min-h-[320px] gap-6">
-                <div className="aspect-w-16 aspect-h-9 bg-gray-100 dark:bg-gray-800">
+                <div className="aspect-w-16 aspect-h-9 bg-gray-100 dark:bg-gray-800 flex justify-center items-center">
                   <Image
-                    src="/process-hacker.png"
+                    src="/icons/process-hacker.png"
                     alt="Process Hacker 2"
-                    width={400}
-                    height={225}
-                    className="object-cover"
+                    width={64}
+                    height={64}
+                    className="rounded-2xl shadow-lg border-2 border-white/20"
                   />
                 </div>
                 <div className="p-6">
@@ -367,13 +367,13 @@ export default function Home() {
 
               {/* USBDeview */}
               <div className="relative bg-gray-900 dark:bg-gray-900 border border-white/10 shadow-2xl rounded-3xl p-8 flex flex-col gap-6">
-                <div className="aspect-w-16 aspect-h-9 bg-gray-100 dark:bg-gray-800">
+                <div className="aspect-w-16 aspect-h-9 bg-gray-100 dark:bg-gray-800 flex justify-center items-center">
                   <Image
-                    src="/usbdeview.png"
+                    src="/icons/usbdeview.png"
                     alt="USBDeview"
-                    width={400}
-                    height={225}
-                    className="object-cover"
+                    width={64}
+                    height={64}
+                    className="rounded-2xl shadow-lg border-2 border-white/20"
                   />
                 </div>
                 <div className="p-6">
@@ -413,13 +413,13 @@ export default function Home() {
 
               {/* SystemLifeInformation */}
               <div className="relative bg-gray-900 dark:bg-gray-900 border border-white/10 shadow-2xl rounded-3xl p-8 flex flex-col h-full w-full min-h-[320px] gap-6">
-                <div className="aspect-w-16 aspect-h-9 bg-gray-100 dark:bg-gray-800">
+                <div className="aspect-w-16 aspect-h-9 bg-gray-100 dark:bg-gray-800 flex justify-center items-center">
                   <Image
-                    src="/systemlife.png"
+                    src="/icons/systeminformer.png"
                     alt="SystemLifeInformation"
-                    width={400}
-                    height={225}
-                    className="object-cover"
+                    width={64}
+                    height={64}
+                    className="rounded-2xl shadow-lg border-2 border-white/20"
                   />
                 </div>
                 <div className="p-6">
