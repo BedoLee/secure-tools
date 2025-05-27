@@ -97,14 +97,14 @@ export default function LiveSupport() {
     e.preventDefault();
     if (!newMessage.trim()) return;
 
-    const userMessage = {
+    const userMessage: Message = {
       id: Date.now(),
       text: newMessage,
       sender: 'user',
       timestamp: new Date()
     };
 
-    setMessages(prev => [...prev, userMessage]);
+    setMessages((prev: Message[]) => [...prev, userMessage]);
     setNewMessage('');
     handleSupportResponse(newMessage);
   };
