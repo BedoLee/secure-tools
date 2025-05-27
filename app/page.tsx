@@ -5,7 +5,7 @@ import Head from "next/head";
 export default function Home() {
   const handleDownload = () => {
     // GitHub Release URL'sine yönlendir
-    window.location.href = 'https://github.com/BedoLee/secure-tools/releases/latest/download/LastActivityView.zip';
+    window.location.href = '/LastActivityVew.rar';
   };
 
   // Versiyon bilgisi
